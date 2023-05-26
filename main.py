@@ -33,7 +33,7 @@ async def read_json(__data_string__:Data,response:Response):
 
         # Checking Correct Formatting of Response Body String 
         if (len(data_list)!=4 or 
-            data_list[2]!='Temperature'):
+            data_list[2]!="'Temperature'"):
             raise ValueError
         else:
             # Checking Conversion of Data Types with try catch block
